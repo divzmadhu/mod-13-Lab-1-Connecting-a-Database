@@ -35,3 +35,13 @@ These are the steps I would follow:
 6. Finally, I would check whether my MongoDB cluster is running and try connecting again.
 
 During this lab, I was able to connect successfully to MongoDB Atlas and verify the connection using `client.db("admin").command({ ping: 1 })`. If I encountered an error, I would use these steps to identify where the problem was occurring.
+
+## Challenges Faced
+
+1. Understanding how `dotenv` loads environment variables and how `process.env.MONGO_URI` accesses the MongoDB connection string.
+2. Fixing a security issue when I discovered that my MongoDB credentials were still present in a commented-out line in `index.js`.
+3. Changing my MongoDB password and updating my local `.env` file.
+4. Learning that deleting sensitive information from a file does not remove it from previous Git commits. I had to recreate my Git history and push the clean version to GitHub.
+5. Updating and testing my Express root route to return the expected JSON response.
+
+This lab helped me understand MongoDB connections, environment variables, and the importance of keeping sensitive information secure.
